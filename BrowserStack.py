@@ -16,7 +16,7 @@ caps = [{
     'browser': 'chrome',
     'browser_version': 'latest',
     'name': 'Parallel Test1',  # test name
-    'build': 'browserstack-build-2'  # Your tests will be organized within this build
+    'build': 'browserstack-build-4'  # Your tests will be organized within this build
     },
     {
     'os_version': '10',
@@ -24,7 +24,7 @@ caps = [{
     'browser': 'firefox',
     'browser_version': 'latest',
     'name': 'Parallel Test2',
-    'build': 'browserstack-build-2'
+    'build': 'browserstack-build-4'
     },
     {
     'os_version': 'Big Sur',
@@ -32,9 +32,24 @@ caps = [{
     'browser': 'safari',
     'browser_version': 'latest',
     'name': 'Parallel Test3',
-    'build': 'browserstack-build-2'
-    }]
-
+    'build': 'browserstack-build-4'
+    },
+    {
+    'os_version': '10',
+    'os': 'Windows',
+    'browser': 'Edge',
+    'browser_version': 'latest',
+    'name': 'Parallel Test2',
+    'build': 'browserstack-build-4'
+    },
+    {
+    'os_version': 'Big Sur',
+    'os': 'OS X',
+    'browser': 'chrome',
+    'browser_version': 'latest',
+    'name': 'Parallel Test3',
+    'build': 'browserstack-build-4'
+}]
 
 # run_session function searches for 'BrowserStack' on google.com
 def run_session(desired_cap):
